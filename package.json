@@ -6,16 +6,29 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "axios": "^0.24.0",
+    "classnames": "^2.3.1",
+    "dotenv": "^10.0.0",
+    "jest": "^27.4.2",
+    "node-fetch": "^2.6.6",
+    "node-sass": "^6.0.1",
+    "postcss-cli": "^9.0.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "svg-react-loader": "^0.4.6",
+    "svgo": "^2.8.0",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build:tailwind": "postcss src/scss/base.scss -o src/scss/tailwind.css",
+    "storybook": "start-storybook -p 8877",
+    "svg": "node ./scripts/FigmaSVGExporter/new.js && svgo -f ./src/svg_temp ./src/svg && rm -rf ./src/svg_temp",
+    "chromatic": "chromatic --project-token=d69947807a29 --exit-zero-on-changes"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +47,22 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.4.1",
+    "@storybook/addon-controls": "^6.4.1",
+    "@storybook/addon-info": "^5.3.21",
+    "@storybook/addon-knobs": "^6.4.0",
+    "@storybook/addon-notes": "^5.3.21",
+    "@storybook/addons": "^6.4.1",
+    "@storybook/preset-create-react-app": "^3.2.0",
+    "@storybook/react": "^6.4.1",
+    "autoprefixer": "^9.8.8",
+    "babel-loader": "^8.2.3",
+    "chromatic": "^6.1.0",
+    "postcss": "^7.0.39",
+    "postcss-loader": "^4.2.0",
+    "sass-loader": "^10.2.0",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
   }
 }

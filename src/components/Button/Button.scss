@@ -1,0 +1,45 @@
+.c-button {
+    border-width: $button-border-width-default;
+    border-radius: $button-border-radius-default;
+    border-style: solid;
+    padding: $button-padding-y-base $button-padding-x-base;
+
+    &--primary {
+        background-color: $button-primary-background-color-default;
+        border-color: $button-primary-border-color-default;
+        color: $button-primary-text-color-default;
+
+        &:hover {
+            background-color: $button-primary-background-color-hover;
+            border-color: $button-primary-border-color-hover;
+            color: $button-primary-text-color-hover;
+            border-width: $button-border-width-hover;
+        }
+    
+        &:focus {
+            background-color: $button-primary-background-color-active;
+            border-color: $button-primary-border-color-active;
+            color: $button-primary-text-color-active;
+            border-width: $button-border-width-active;
+        }
+    }
+    &--secondary {
+        background-color: $button-secondary-background-color-default;
+        border-color: $button-secondary-border-color-default;
+        color: $button-secondary-text-color-default;
+
+        &:hover {
+            background-color: $button-secondary-background-color-hover;
+            border-color: $button-primary-border-color-hover;
+            color: $button-secondary-text-color-hover;
+            border-width: $button-border-width-hover;
+        }
+    
+        &:focus {
+            background-color: $button-secondary-background-color-active;
+            border-color: $button-secondary-border-color-active;
+            color: $button-secondary-text-color-active;
+            border-width: $button-border-width-active;
+        }
+    }
+}
