@@ -27,8 +27,7 @@
     "eject": "react-scripts eject",
     "build:tailwind": "postcss src/scss/base.scss -o src/scss/tailwind.css",
     "storybook": "start-storybook -p 8877",
-    "svg": "node ./scripts/FigmaSVGExporter/new.js && svgo -f ./src/svg_temp ./src/svg && rm -rf ./src/svg_temp",
-    "chromatic": "chromatic --project-token=d69947807a29 --exit-zero-on-changes"
+    "svg": "node ./scripts/FigmaSVGExporter/new.js && svgo -f ./src/svg_temp ./src/svg && rm -rf ./src/svg_temp"
   },
   "eslintConfig": {
     "extends": [
