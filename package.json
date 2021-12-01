@@ -26,6 +26,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build:tailwind": "postcss src/scss/base.scss -o src/scss/tailwind.css",
+    "build-storybook": "build-storybook -s public",
     "storybook": "start-storybook -p 8877",
     "svg": "node ./scripts/FigmaSVGExporter/new.js && svgo -f ./src/svg_temp ./src/svg && rm -rf ./src/svg_temp"
   },
